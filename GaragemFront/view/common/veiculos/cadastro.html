@@ -1,0 +1,29 @@
+<div class="container"> 
+<div class "row justify-content-center">
+	<br>
+	<h1 class="col-sm-9 display-4 text-center">Cadastro de veículo</h1>
+	<br>
+	<div class="w-100"></div>
+	<form class="col-sm-9">
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="marca">Marca</label>
+				<input type="text" class="form-control" id="marca" placeholder="" ng-model="VeiculoCtrl.carro.marca">
+			</div>
+			<div class="form-group col-md-6">
+				<label for="modelo">Modelo</label>
+				<input type="text" class="form-control" id="modelo" placeholder="" ng-model="VeiculoCtrl.carro.modelo">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="ano">Ano</label>
+			<input type="text" class="form-control" id="ano" placeholder="" ng-model="VeiculoCtrl.carro.ano">
+		</div>
+		<div class="form-group">
+			<label for="placa">Placa</label>
+			<input type="text" class="form-control" id="placa" placeholder="" ng-model="VeiculoCtrl.carro.placa">
+			<br>
+			<br>
+			<button type="button" class="btn btn-block btn-success" ng-click="VeiculoCtrl.save()">Cadastrar</button>
+		</div>
+</div>

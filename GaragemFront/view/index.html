@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-br" ng-app="joaoApp">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="assets/img/car.jpg">
+	<title>Reserva de veículos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="d-flex flex-column flex-md-row align-items-center p-2 px-md-3 mb-3 bg-white border-bottom box-shadow">
+		<img class="logocabecalho" src="assets/img/logo_fundo.png" alt="" width="150" height="75">
+		<h4 class="my-0 mr-md-auto font-weight-dark"></h4>
+		<nav class="my-2 my-md-0 mr-md-3">
+			<a class="p-2 text-dark" href ui-sref="home">Início</a>
+			<a class="p-2 text-dark" href ui-sref="veiculos">Cadastro de veículo</a>
+			<a class="p-2 text-dark" href ui-sref="reservas">Cadastro de reserva</a>
+			<a class="p-2 text-dark" href ui-sref="reservas-lista">Lista de veículos e reservas</a>
+		</nav>
+	</div>
+	<div class="container">
+		<div data-ui-view class="row justify-content-center"></div>
+		<footer class="mastfoot text-center">
+			<div class="inner">
+				<br><br><br>
+				<p> &copy; 2018 João Manoel Aureliano.</a>
+				</p>
+			</div>
+		</footer>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/angular.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/angular-ui-router.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/holder.min.js"></script>
+		<script src="assets/js/restangular.min.js"></script>
+		<script src="common/app.states.js"></script>
+		<script src="common/rest.service.js"></script>
+		<script src="assets/js/lodash.js"></script>
+		<script src="common/home/controller.js"></script>
+		<script src="common/veiculos/controller.js"></script>
+		<script src="common/veiculos/service.js"></script>
+		<script src="common/reservas/controller.js"></script>
+		<script src="common/reservas/controller.list.js"></script>
+		<script src="common/reservas/service.js"></script>
+		<script src="common/veiculos/controller.list.js"></script>
+		<script>
+		Holder.addTheme('thumb', {
+			bg: '#55595c',
+			fg: '#eceeef',
+			text: 'Thumbnail'
+		});
+		</script>
+</body>
+
+</html>

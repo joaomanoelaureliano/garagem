@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline" ng-submit="vm.load()">
+            <input ng-model="Buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        </form>
+        </nav>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Placa</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Ano</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="rec in vm.records">
+                <th scope="row">{{}}</th>
+                <tr ng-repeat="tabela_veiculos in veiculos | filter:Buscar" ng-click="seleciona_veiculo(tabela_veiculos)">
+                <td>{{}}</td>
+                <td>{{}}</td>
+                <td>{{}}</td>
+                <td style="text-align: right">
+                    <button ng-click="excluir()" class="btn btn-sm btn-danger" type="button">Excluir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
